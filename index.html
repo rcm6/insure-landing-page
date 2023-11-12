@@ -21,7 +21,16 @@
   background-repeat: no-repeat, no-repeat;
 }
 
-
+.desktop-how-we-work-bg {
+  position: relative;
+  width: 100%;
+  height: 28vh; /* Adjust the height as needed */
+  background-color: hsl(256, 26%, 20%);
+  background-image: url('images/bg-pattern-how-we-work-desktop.svg');
+  background-position: top right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -112,11 +121,23 @@
       </div>
     </section>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
+<!-- Centered Jumbotron with two columns -->
+<div class="jumbotron desktop-how-we-work-bg mx-auto text-white d-flex align-items-center justify-content-center" style="max-width: 1000px;">
+  <div class="row">
+    <!-- Left column for text -->
+    <div class="col-md-6">
       <h2>Find out more about how we work</h2>
-      <a class="btn btn-outline-primary" href="#">How we work</a>
     </div>
+    <!-- Right column for button -->
+    <div class="col-md-6 text-center">
+      <a class="btn btn-lg btn-outline-light" href="#">How we work</a>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <!-- footer -->
 <footer>
