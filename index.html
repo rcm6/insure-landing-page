@@ -7,6 +7,27 @@
   <title>Frontend Mentor | Insure landing page</title>
   <!-- Include Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+  <style>
+
+.desktop-header-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: hsl(256, 26%, 20%);
+  background-image: url('images/bg-pattern-intro-right-desktop.svg'), url('images/bg-pattern-intro-left-desktop.svg');
+  background-position: top right, bottom left;
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
+
+
+
+
+  </style>
+
 </head>
 <body>
   <!--  Navbar -->
@@ -38,23 +59,39 @@
   <!-- responsive classes for the image -->
   <img src="images/image-intro-desktop.jpg" class="img-fluid d-lg-none" alt="Image Intro">
 
-   <div class="container">
-    <!-- Jumbotron with content in two columns -->
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="display-4">Humanizing your insurance.</h1>
-          <p class="lead">
-            Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.
-          </p>
-          <a class="btn btn-outline-primary" href="#">View plans</a>
+  <div class="container-fluid p-0 text-white">
+    <!-- Updated Jumbotron with two rows -->
+    <div class="jumbotron m-0 mx-auto">
+        <!-- First row for content -->
+        <div class="row desktop-header-bg">
+            <div class="col-md-6">
+                <h1 class="display-4">Humanizing your insurance.</h1>
+                <p class="lead">
+                    Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.
+                </p>
+                <a class="btn btn-outline-primary" href="#">View plans</a>
+            </div>
+            <div class="col-md-6">
+                <!-- Image -->
+                <img src="images/image-intro-desktop.jpg" class="img-fluid"  style="display: none;" alt="Jumbotron Image">
+            </div>
         </div>
-        <div class="col-md-6 d-none d-lg-block">
-          <!-- Image only visible on desktop -->
-          <img src="images/image-intro-desktop.jpg" class="img-fluid" alt="Jumbotron Image">
+        <!-- Second row for additional content if needed -->
+        <div class="row">
+            <div class="col-md-6 desktop-header-bg2">
+                <!-- Additional content can be added here if needed -->
+            </div>
+            <div class="col-md-6">
+                <!-- Additional content can be added here if needed -->
+            </div>
         </div>
-      </div>
     </div>
+</div>
+
+
+
+
+
 
     <!-- new section-->
     <section>
